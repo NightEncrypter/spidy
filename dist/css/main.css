@@ -228,6 +228,7 @@ img {
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
+    margin-top: -16rem;
     text-align: center;
     padding: 5%; }
     #header-home .header-content h1 {
