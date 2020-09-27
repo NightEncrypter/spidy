@@ -35,32 +35,35 @@
   }
 
   //   Stack Grid Columns
-  #home-a .specials,
-  #home-b .stats,
-  #home-c .process,
-  #about-d .testimonials,
-  #contact-b .contact-info,
-  .items {
-    grid-template-columns: 1fr;
-  }
-  #home {
-    &-a {
-      .specials div {
-        border-bottom: 2px $special-color solid;
-        padding-bottom: 1rem;
+  @media (max-width: 800px) {
+    #home-a .specials,
+    #home-b .stats,
+    #home-c .process,
+    #about-d .testimonials,
+    #contact-b .contact-info,
+    .items {
+      grid-template-columns: 1fr;
+    }
+    #home {
+      &-a {
+        .specials div {
+          border-bottom: 2px $special-color solid;
+          padding-bottom: 1rem;
 
-        &:last-child {
-          border: none;
-          padding-bottom: 0;
+          &:last-child {
+            border: none;
+            padding-bottom: 0;
+          }
+        }
+      }
+      &-b {
+        .stats div {
+          padding: 2rem 0 1rem 0;
         }
       }
     }
-    &-b {
-      .stats div {
-        padding: 2rem 0 1rem 0;
-      }
-    }
   }
+
   //   FOOTER
   #main-footer {
     height: 7rem;
@@ -73,51 +76,53 @@
 }
 
 //ABOUT
-#about {
-  &-a {
-    .about-info {
-      grid-template-areas:
-        "bioimage"
-        "bio"
-        "aw1"
-        "aw2"
-        "aw3";
-    }
-  }
-  //   LOGO
-  &-c {
-    display: none;
-  }
-}
-
-//CONTACT
-#contact {
-  &-a {
-    .text-fields {
-      grid-template-areas:
-        "name"
-        "subject"
-        "email"
-        "phone"
-        "message";
-    }
-  }
-  &-b {
-    div {
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 2px #555 solid;
-
-      &:last-child {
-        border: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
+@media (max-width: 800px) {
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bioimage"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3";
       }
     }
+    //   LOGO
+    &-c {
+      display: none;
+    }
   }
-  &-c {
-    h1 {
-      font-size: 2rem;
+
+  //CONTACT
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px #555 solid;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
     }
   }
 }

@@ -37,7 +37,11 @@ img {
   height: 300px;
   color: #fff;
   text-decoration: uppercase;
+
   cursor: pointer;
+}
+#logo a {
+  border-bottom: none;
 }
 #main-nav {
   display: flex;
