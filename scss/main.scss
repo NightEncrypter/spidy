@@ -33,8 +33,8 @@ img {
 #logo {
   // margin-top: ;
   padding: 1rem;
-  width: 230px;
-  height: 300px;
+  width: 250px;
+  height: 500px;
   color: #fff;
   text-decoration: uppercase;
 
@@ -63,11 +63,11 @@ img {
     transition: border-color 0.5s;
 
     &:hover {
-      border-color: blue;
+      border-color: $main-color;
     }
 
     &.current {
-      border-color: $dark-color;
+      border-color: $main-color;
     }
   }
 }
