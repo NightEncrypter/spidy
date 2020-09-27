@@ -1,0 +1,20 @@
+// Variables
+$website-width: 1280px;
+$icon: #25aff3;
+$hover: blue;
+$main-color: #ffbc00;
+$dark-color: #333;
+$light-color: #f2f2f2;
+$special-color: #007acc;
+$special-color2: #bf6d9f;
+$medium-color: #ccc;
+$bg-image: url("../img/aloneboy\ \(1\).jpg");
+
+// Set Text color
+@function set-text-color($color) {
+  @if (lightness($color) >50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
