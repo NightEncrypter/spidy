@@ -75,15 +75,15 @@ img {
     position: relative;
     background: $bg-image no-repeat center center / cover;
     height: 100vh;
-    opacity: 0.95;
+    // opacity: 0.95;
     color: #fff;
 
     // Header Content
     .header-content {
       // MAIN-HEADING
-      margin-top: -6rem;
+      // margin-top: -6rem;
       text-align: center;
-      padding: 15%;
+      padding: 5%;
 
       h1 {
         font-size: 3rem;

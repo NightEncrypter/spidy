@@ -3,7 +3,8 @@
   #header-home {
     height: 30rem;
     .header-content {
-      padding-top: 5rem;
+      padding-top: 0rem;
+      margin-top: -7rem;
     }
   }
 }
@@ -12,10 +13,10 @@
 @media (max-width: 500px) {
   #main-nav {
     flex-direction: column;
-    align-items: center;
+    margin-top: -5rem;
 
     li {
-      padding: 1rem;
+      padding: 0.5rem;
     }
   }
   #header {
@@ -121,20 +122,11 @@
   }
 }
 
-//LANDSCAPE
-@media (max-height: 580px) {
-  #header-home {
-    .header-content {
-      margin-top: -12rem;
-    }
-  }
-}
-@media (max-height: 330px) {
-  #header-home {
-    .header-content {
-      h1 {
-        font-size: 2rem;
-      }
-    }
-  }
-}
+// //LANDSCAPE
+// @media (max-height: 500px) {
+//   #header-home {
+//     .header-content {
+//       padding-top: 3rem;
+//     }
+//   }
+// }
